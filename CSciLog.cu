@@ -177,11 +177,11 @@ string CSciLog::getTimePassedString()
   int sec = resTime.tv_sec;
   int usec = resTime.tv_usec;
   double finalAns = double(sec) + (1.0*usec)/double(1000000);
-  if(usec==99999)
-  {
-	  cout<<(1.0*usec)/double(1000000)<<' ';
-  }
-  sprintf(currentTime, "%f", finalAns);
+  //if(usec==99999)
+  //{
+//	  printf("%.6f %.6f %.6f\n",double(sec),(1.0*usec)/double(1000000),finalAns);
+ // }
+  sprintf(currentTime, "%.6f", finalAns);
   return std::string(currentTime);
 }
 /*
