@@ -176,7 +176,12 @@ string CSciLog::getTimePassedString()
   char currentTime[84] = "";
   int sec = resTime.tv_sec;
   int usec = resTime.tv_usec;
-  sprintf(currentTime, "%d\.%d", sec,usec);
+  double finalAns = double(sec) + (1.0*usec)/double(1000000);
+  if(usec==99999)
+  {
+	  cout<<(1.0*usec)/double(1000000)<<' ';
+  }
+  sprintf(currentTime, "%f", finalAns);
   return std::string(currentTime);
 }
 /*
