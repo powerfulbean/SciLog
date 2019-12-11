@@ -16,7 +16,6 @@ public:
 	string m_dir;
 	fstream m_file;
 	vector<string> m_cache;
-	//clock_t m_timeStart;
 	timeval* pm_timeStart = new timeval;
 
 

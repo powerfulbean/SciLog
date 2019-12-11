@@ -1,12 +1,7 @@
 /**********************************/
 
-#include<iostream>
-#include<string>
 #include "CSciLog.h"
-#include <bits/stdc++.h>
 
-
-using namespace std;
 
 int printHello()
 {
